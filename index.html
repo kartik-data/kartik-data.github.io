@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kartik Sharma | Data Analyst &amp; Aspiring Data Scientist</title>
+<meta name="description" content="Portfolio of Your Name — Business Analyst growing into Data Science. Case studies, dashboards, certifications and job simulations.">
+
+<!-- Apply saved theme before first paint (prevents a light/dark flash) -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    var t = 'light';
+    try {
+      t = localStorage.getItem('portfolio-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (e) {}
+    d.setAttribute('data-theme', t);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ MOBILE TOP BAR ============ -->
+<header class="topbar">
+  <div class="brand">
+    <div class="avatar" aria-hidden="true">KS</div>
+    <div class="brand-name">Kartik Sharma</div>
+  </div>
+  <div class="topbar-actions">
+    <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+      <span class="theme-icon">&#9790;</span>
+    </button>
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">&#9776;</button>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+
+<div class="wrap">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">KS</div>
+        <div>
+          <div class="brand-name">Kartik Sharma</div>
+          <div class="brand-role">Data Analyst<br>Aspiring Data Scientist</div>
+        </div>
+      </div>
+      <nav class="sb-nav" aria-label="Sections">
+        <a href="#about"><span>01</span>About</a>
+        <a href="#skills"><span>02</span>Skills</a>
+        <a href="#projects"><span>03</span>Projects</a>
+        <a href="#now"><span>04</span>Now</a>
+        <a href="#certifications"><span>05</span>Certifications</a>
+        <a href="#experience"><span>06</span>Experience</a>
+        <a href="#profiles"><span>07</span>Profiles</a>
+        <a href="#contact"><span>08</span>Contact</a>
+      </nav>
+    </div>
+    <div class="sb-bottom">
+      <button class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <span class="theme-icon">&#9790;</span>
+        <span class="theme-label">Dark mode</span>
+      </button>
+      <div class="sb-links">
+        <a href="https://github.com/kartik-data" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kartik-sharma-124analyst/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.hackerrank.com/profile/kartikprayag68" target="_blank" rel="noopener">HackerRank</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="section hero" id="top">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow reveal"><span class="pulse-dot"></span>Open to internships &amp; analyst roles</div>
+          <h1 class="reveal" style="--d:80ms">I turn messy business questions into <em>decisions</em> backed by data.</h1>
+          <p class="lede reveal" style="--d:160ms">
+            I'm a Data  Analyst building toward a career in Data Science, combining stakeholder
+            communication, SQL and dashboards with a growing foundation in Python, statistics and machine
+            learning.Having hands-on experience with Python data analysis.
+          </p>
+          <div class="btn-row reveal" style="--d:240ms">
+            <a href="Kartik_Sharma_Analyst1_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download resume &darr;</a>
+            <a href="#projects" class="btn btn-secondary">View projects</a>
+          </div>
+          <div class="stat-row reveal" style="--d:320ms">
+            <div class="stat">
+              <div class="num" data-count="3">3</div>
+              <div class="label">Job simulations completed</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="5">5</div>
+              <div class="label">Core tools: Python, SQL, Excel, Power BI, Data Analysis</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="3">3</div>
+              <div class="label">Case-study projects</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- decorative card: data → insight → decision -->
+        <div class="card hero-card reveal" style="--d:300ms" aria-hidden="true">
+          <div class="hc-head"><strong>Insight snapshot</strong><span>illustrative</span></div>
+          <div class="hc-bars">
+            <span style="--h:38%;--i:0"></span>
+            <span style="--h:55%;--i:1"></span>
+            <span style="--h:46%;--i:2"></span>
+            <span style="--h:72%;--i:3"></span>
+            <span style="--h:62%;--i:4"></span>
+            <span style="--h:92%;--i:5"></span>
+          </div>
+          <svg class="hc-line" viewBox="0 0 240 60" preserveAspectRatio="none">
+            <path pathLength="1" d="M0 50 C 30 46, 50 30, 80 34 S 130 14, 160 20 S 210 8, 240 4"/>
+          </svg>
+          <div class="hc-flow"><span>Raw data</span><i>&rarr;</i><span>Insight</span><i>&rarr;</i><span>Decision</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <div class="section-label">01 — About</div>
+        <h2>From answering business questions to building the models that answer them</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+           I enjoy working with data to find answers, understand patterns,  and solve real-world problems. 
+           My focus is on turning raw information into clear insights that help businesses make better decisions. 
+            I believe good analysis is not just about numbers, but about understanding the story behind them. 
+            I'm always curious to learn, explore new ideas, and find better ways to use data..
+          </p>
+          <p>
+            Today I split my time between core DA work (requirement gathering, process mapping, reporting)
+            and building my data science skill set: Python, statistics and machine learning fundamentals,
+            applied to real problems rather than just tutorials.
+          </p>
+          <p>
+            Alongside my DA work, I've completed hands-on job simulations with Deloitte, Commonwealth
+            Bank and Tata iQ, applying data analysis, dashboarding and GenAI-powered analytics to
+            real-world business scenarios. I'm working toward owning analytics end to end, taking raw data
+            all the way to a business decision.
+          </p>
+        </div>
+        <aside class="card about-side reveal" style="--d:120ms">
+          <h3>What I've completed</h3>
+          <ul class="sim-list">
+            <li><span><b>Deloitte</b> — Data Analytics job simulation</span></li>
+            <li><span><b>Commonwealth Bank</b> — Introduction to Data Science</span></li>
+            <li><span><b>Tata iQ</b> — GenAI-Powered Data Analytics</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <div class="section-label">02 — Skills</div>
+        <h2>What I bring from both sides</h2>
+      </div>
+      <div class="skill-cols">
+        <div class="card skill-card reveal">
+          <h3>Data  &amp; Analytical</h3>
+          <div class="chips">
+           <span class="chip">Data Collection</span>
+            <span class="chip">Data Cleaning</span>
+            <span class="chip">Data Analysis</span>
+            <span class="chip">Exploratory Data Analysis</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Dashboard Development</span>
+            <span class="chip">Insight Generation</span>
+            <span class="chip">Data Storytelling</span>
+         </div>
+        </div>
+        <div class="card skill-card reveal" style="--d:100ms">
+          <h3>Technical &amp; Data Science</h3>
+          <div class="chips">
+            <span class="chip">Exploratory data analysis</span>
+            <span class="chip">Statistics &amp; Descriptive Analysis</span>
+            <span class="chip">ML fundamentals</span>
+            <span class="chip">Database Design</span>
+            <span class="chip">Modeling</span>
+            <span class="chip">GenAI for analytics</span>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card tools-card reveal">
+        <h3>Tools</h3>
+        <div class="chips">
+          <span class="chip core">Python (Pandas, NumPy, Matplotlib, Seaborn, EDA)</span>
+          <span class="chip core">SQL</span>
+          <span class="chip core">Excel (SUMIFS, COUNTIFS, pivots, Al)</span>
+          <span class="chip core">Power BI (Power Query, DAX, Dashboard)</span>
+          <span class="chip core">Tableau(Basics)</span>
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">Jupyter</span>
+          <span class="chip">VS Code</span>  
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <div class="section-label">03 — Projects</div>
+        <h2>Projects</h2>
+        <p class="sub"> Analysis Approach: Understanding the Problem, the insight the data revealed, and what changed because of it.</p>
+      </div>
+
+      <!--
+        PROJECT TEMPLATE: copy one whole <article class="card project reveal"> block to add a project.
+        - Change the three ids (pN-chart, pN-shot, pN-data) so they stay unique.
+        - Chart: set data-chart to a key defined in script.js.
+        - Dashboard image: save your screenshot in the images/ folder and update the img src.
+      -->
+
+      <!-- PROJECT 1 -->
+     <article class="card project reveal">
+  <div class="project-head">
+    <div>
+      <span class="project-num">Project 01</span>
+      <h3>Olist E-commerce Data Analysis</h3>
+    </div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">EDA</span>
+      <span class="tag">Data Visualization</span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="story">
+
+      <div class="story-block">
+        <span class="k">Problem</span>
+        <p>
+          E-commerce information was distributed across multiple datasets,
+          making it difficult to understand customer behavior, sales trends,
+          product performance, and delivery experiences in one place.
+        </p>
+      </div>
+
+      <div class="story-block insight">
+        <span class="k">Key Insights</span>
+        <p>
+          Delivery delays were associated with lower customer review scores.
+          Electronics generated strong revenue despite fewer orders, while
+          credit cards were the most commonly used payment method.
+        </p>
+      </div>
+
+      <div class="story-block">
+        <span class="k">Approach</span>
+        <p>
+          Cleaned and processed 6 relational datasets using Python and Pandas,
+          handled missing values, performed feature engineering, and merged
+          the data for exploratory analysis. Created visualizations to
+          identify sales trends, payment preferences, product performance,
+          and delivery patterns.
+        </p>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi">
+          <strong>100K+</strong>
+          <span>Rows of data</span>
+        </div>
+        <div class="kpi">
+          <strong>6</strong>
+          <span>Datasets analyzed</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project-visual">
+      <div class="viz-tabs" role="tablist" aria-label="Project 1 views">
+        <button class="viz-tab active" role="tab" aria-selected="true"
+          aria-controls="p1-chart" data-target="p1-chart">Insights</button>
+        <button class="viz-tab" role="tab" aria-selected="false"
+          aria-controls="p1-shot" data-target="p1-shot">Dashboard</button>
+        <button class="viz-tab" role="tab" aria-selected="false"
+          aria-controls="p1-data" data-target="p1-data">Data</button>
+      </div>
+
+      <div class="viz-panel active" id="p1-chart" role="tabpanel">
+        <div class="chart-wrap">
+          <ul>
+            <li>Delivery delays and customer satisfaction</li>
+            <li>Revenue and monthly sales trends</li>
+            <li>Product category performance</li>
+            <li>Customer payment preferences</li>
+          </ul>
+        </div>
+        <p class="viz-caption">Key areas explored during the analysis.</p>
+      </div>
+      <div class="viz-panel" id="p1-shot" role="tabpanel">
+        <div class="shot-stack">
+          <img src="insights/revenue_olist.png"
+            alt="Olist monthly revenue trend chart"
+            loading="lazy">
+          <img src="insights/payment_olist.png"
+            alt="Olist payment method distribution chart"
+            loading="lazy">
+          <img src="insights/sales_olist.png"
+            alt="Olist sales by product category chart"
+            loading="lazy">
+        </div>
+        <p class="viz-caption">Olist E-commerce Analysis – Project Screenshot.</p>
+      </div>
+
+      <div class="viz-panel" id="p1-data" role="tabpanel">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Analysis Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Customers</td><td>Customer information</td></tr>
+            <tr><td>Orders</td><td>Order trends</td></tr>
+            <tr><td>Order Items</td><td>Sales and products</td></tr>
+            <tr><td>Products</td><td>Category analysis</td></tr>
+            <tr><td>Payments</td><td>Payment preferences</td></tr>
+            <tr><td>Reviews</td><td>Customer satisfaction</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-links">
+    <a class="ext-link" href="https://github.com/kartik-data/Olist-Ecommerce-Analysis"
+      target="_blank" rel="noopener">GitHub repo &nearr;</a>
+  </div>
+</article>
+
+     
+<!-- PROJECT 2 -->
+<article class="card project reveal">
+  <div class="project-head">
+    <div>
+      <span class="project-num">Project 02</span>
+      <h3>NYC Yellow Taxi Earnings Analysis</h3>
+    </div>
+    <div class="tags">
+      <span class="tag">Power BI</span>
+      <span class="tag">Power Query</span>
+      <span class="tag">DAX</span>
+      <span class="tag">Data Analysis</span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="story">
+
+      <div class="story-block">
+        <span class="k">Problem</span>
+        <p>
+          A taxi fleet manager wants to understand when and where taxis
+          generate the most revenue. The challenge is to identify the
+          most profitable zones, days, hours and payment methods using
+          millions of trip records.
+        </p>
+      </div>
+
+      <div class="story-block insight">
+        <span class="k">Key Insight</span>
+        <p>
+          Airport trips generate significantly higher revenue per trip,
+          while weekday patterns and pickup locations reveal important
+          differences between trip volume and revenue.
+        </p>
+      </div>
+
+      <div class="story-block">
+        <span class="k">Approach</span>
+        <p>
+          Cleaned and transformed 3.5 million trip records using Power
+          Query, built a star-schema data model, created DAX measures,
+          and developed an interactive Power BI dashboard.
+        </p>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi">
+          <strong data-count="3.52" data-suffix="M">3.52M</strong>
+          <span>Trips analyzed</span>
+        </div>
+        <div class="kpi">
+          <strong data-count="102.25" data-prefix="$" data-suffix="M">$102.25M</strong>
+          <span>Total revenue</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-visual">
+
+      <div class="viz-tabs" role="tablist" aria-label="Project 2 views">
+        <button class="viz-tab active" role="tab"
+          aria-selected="true" aria-controls="p2-shot"
+          data-target="p2-shot">Dashboard</button>
+
+        <button class="viz-tab" role="tab"
+          aria-selected="false" aria-controls="p2-chart"
+          data-target="p2-chart">Insights</button>
+
+        <button class="viz-tab" role="tab"
+          aria-selected="false" aria-controls="p2-data"
+          data-target="p2-data">Data</button>
+      </div>
+
+      <!-- DASHBOARD TAB: ADD YOUR IMAGE HERE -->
+      <div class="viz-panel active" id="p2-shot" role="tabpanel">
+        <figure class="shot">
+          <div class="shot-placeholder">
+            Add your Power BI dashboard screenshot
+            <code>images/project-2-dashboard.png</code>
+          </div>
+          <img src="Dashboard.png"
+            alt="NYC Yellow Taxi Power BI dashboard"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </figure>
+        <p class="viz-caption">
+          NYC Yellow Taxi Earnings Analysis — Power BI Dashboard.
+        </p>
+      </div>
+
+      <!-- INSIGHTS TAB -->
+      <div class="viz-panel" id="p2-chart" role="tabpanel">
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Business Insight</th>
+                <th>Finding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Airport profitability</strong></td>
+                <td>
+                  JFK generated $73.11 per trip and LaGuardia
+                  generated $66.47 per trip. Together, they
+                  contributed about 16% of revenue from only
+                  6.5% of trips.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Trip volume vs value</strong></td>
+                <td>
+                  Upper East Side South recorded 152K trips
+                  among the leading zones, but average revenue
+                  was only $21.30 per trip.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Weekly revenue pattern</strong></td>
+                <td>
+                  Tuesday to Saturday generated approximately
+                  $3.4M–$3.7M per day, compared with $2.5M
+                  on Sunday and $2.6M on Monday.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Payment preferences</strong></td>
+                <td>
+                  Credit cards contributed approximately 63%
+                  of revenue, Flex Fare 30%, and cash 7%.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Unusual revenue day</strong></td>
+                <td>
+                  January 25 recorded the lowest daily revenue
+                  at approximately $1.3M. The reason has not
+                  been verified and requires further investigation.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="viz-caption">
+          Key findings from January 2026 trip data, translated
+          into business insights for taxi fleet operations.
+        </p>
+      </div>
+
+      <!-- DATA TAB -->
+      <div class="viz-panel" id="p2-data" role="tabpanel">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Dataset / Component</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Yellow Taxi Trips</td>
+              <td>Main trip and revenue records</td>
+            </tr>
+            <tr>
+              <td>Taxi Zone Lookup</td>
+              <td>Pickup zone and borough identification</td>
+            </tr>
+            <tr>
+              <td>Dim_Date</td>
+              <td>Date and weekday analysis</td>
+            </tr>
+            <tr>
+              <td>Payment Type</td>
+              <td>Payment code classification</td>
+            </tr>
+            <tr>
+              <td>Power Query</td>
+              <td>Data cleaning and transformation</td>
+            </tr>
+            <tr>
+              <td>DAX Measures</td>
+              <td>Revenue, trips, tips and averages</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="viz-caption">
+          Data model and analytical components used in the project.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project-links">
+     <a class="ext-link"
+      href="Dashboard_Jan_NYC.pbix"
+      target="_blank" rel="noopener">
+      Dashboard repo &nearr;
+    </a>
+    <a class="ext-link"
+      href="https://github.com/kartik-data/nyc-taxi-powerbi-dashboard"
+      target="_blank" rel="noopener">
+      GitHub repo &nearr;
+    </a>
+  </div>
+</article>
+
+
+<!-- PROJECT 3 -->
+<article class="card project reveal">
+  <div class="project-head">
+    <div>
+      <span class="project-num">Project 03</span>
+      <h3>Restaurant Data Analysis</h3>
+    </div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">EDA</span>
+      <span class="tag">Data Visualization</span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="story">
+
+      <div class="story-block">
+        <span class="k">Problem</span>
+        <p>
+          Restaurant businesses need to understand customer preferences,
+          pricing, ratings, and service availability to make better
+          business decisions and improve customer experience.
+        </p>
+      </div>
+
+      <div class="story-block insight">
+        <span class="k">Key Insight</span>
+        <p>
+          Most restaurants operate in the low-to-medium price range.
+          Cuisine preferences, customer ratings, and service options
+          reveal differences in restaurant positioning and customer choices.
+        </p>
+      </div>
+
+      <div class="story-block">
+        <span class="k">Approach</span>
+        <p>
+          Used Python to clean and explore restaurant data, analyze
+          cuisines, pricing, ratings and service availability, and
+          create visualizations including geographic maps.
+        </p>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi">
+          <strong>6+</strong>
+          <span>Analysis areas explored</span>
+        </div>
+        <div class="kpi">
+          <strong>EDA</strong>
+          <span>Exploratory data analysis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-visual">
+
+      <!-- TABS -->
+      <div class="viz-tabs" role="tablist" aria-label="Project 3 views">
+        <button class="viz-tab active" role="tab"
+          aria-selected="true" aria-controls="p3-shot"
+          data-target="p3-shot">Dashboard</button>
+
+        <button class="viz-tab" role="tab"
+          aria-selected="false" aria-controls="p3-chart"
+          data-target="p3-chart">Insights</button>
+
+        <button class="viz-tab" role="tab"
+          aria-selected="false" aria-controls="p3-data"
+          data-target="p3-data">Data</button>
+      </div>
+
+      <!-- DASHBOARD: ADD YOUR IMAGE -->
+      <div class="viz-panel active" id="p3-shot" role="tabpanel">
+        <figure class="shot">
+          <div class="shot-placeholder">
+            Add your restaurant analysis screenshot
+            <code>images/project-3-dashboard.png</code>
+          </div>
+         <div class="viz-panel" id="p1-shot" role="tabpanel">
+        <div class="shot-stack">
+          <img src="insights/reataurtn2.png"
+            alt="Olist monthly revenue trend chart"
+            loading="lazy">
+          <img src="insights/restaurant3.png"
+            alt="Olist payment method distribution chart"
+            loading="lazy">
+          <img src="insights/retaurant.png"
+            alt="Olist sales by product category chart"
+            loading="lazy">
+        </div>
+        </figure>
+
+        <p class="viz-caption">
+          Restaurant Data Analysis — Dashboard and Visualizations.
+        </p>
+      </div>
+
+      <!-- INSIGHTS TAB -->
+      <div class="viz-panel" id="p3-chart" role="tabpanel">
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Analysis Area</th>
+              <th>Key Finding</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Price Distribution</strong></td>
+              <td>
+                Most restaurants fall within the low-to-medium
+                price range, indicating a strong presence of
+                affordable dining options.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Cuisine Preferences</strong></td>
+              <td>
+                North Indian and Chinese cuisines are among
+                the most common restaurant offerings.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Online Delivery</strong></td>
+              <td>
+                Mid-range restaurants show greater adoption
+                of online delivery services.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Table Booking</strong></td>
+              <td>
+                High-end restaurants place greater emphasis
+                on table booking services.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Customer Ratings</strong></td>
+              <td>
+                Most restaurant ratings fall between 3 and 4,
+                suggesting generally moderate-to-good ratings.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Geographic Distribution</strong></td>
+              <td>
+                Restaurants are concentrated in urban areas,
+                highlighting the importance of location in
+                restaurant market analysis.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="viz-caption">
+          Key findings from restaurant pricing, cuisine,
+          customer ratings, services and location analysis.
+        </p>
+      </div>
+
+      <!-- DATA TAB -->
+      <div class="viz-panel" id="p3-data" role="tabpanel">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Dataset / Feature</th>
+              <th>Analysis Performed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Restaurant Name & Location</td>
+              <td>Geographic distribution</td>
+            </tr>
+            <tr>
+              <td>Cuisines</td>
+              <td>Popular cuisines and combinations</td>
+            </tr>
+            <tr>
+              <td>Price Range</td>
+              <td>Restaurant pricing patterns</td>
+            </tr>
+            <tr>
+              <td>Aggregate Rating</td>
+              <td>Rating distribution</td>
+            </tr>
+            <tr>
+              <td>Votes</td>
+              <td>Customer engagement analysis</td>
+            </tr>
+            <tr>
+              <td>Online Delivery</td>
+              <td>Service availability comparison</td>
+            </tr>
+            <tr>
+              <td>Table Booking</td>
+              <td>Booking service comparison</td>
+            </tr>
+            <tr>
+              <td>Customer Reviews</td>
+              <td>Sentiment analysis</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="viz-caption">
+          Main variables and dimensions explored in the project.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project-links">
+    <a class="ext-link"
+      href="https://github.com/kartik-data/Restaurant-Data-Analysis"
+      target="_blank" rel="noopener">
+      GitHub repo &nearr;
+    </a>
+  </div>
+</article>
+
+
+    <!-- NOW -->
+    <section class="section" id="now">
+      <div class="section-head reveal">
+        <div class="section-label">04 — Now</div>
+        <h2>What I'm currently learning</h2>
+      </div>
+      <div class="now-box reveal">
+        <span class="pulse-dot"></span>
+        <div>
+          <p>
+            Working through a machine learning specialization, building a personal project on time-series
+            forecasting, and reading one data science case study a week to sharpen how I turn models
+            into business recommendations. Replace this with what's true for you right now.
+          </p>
+          <div class="updated">Last updated: November 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="section-head reveal">
+        <div class="section-label">05 — Certifications</div>
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-list">
+
+        <div class="card cert reveal">
+  <div class="cert-main">
+    <div class="cert-name">Data Analytics & Data Science Job Simulations</div>
+    <div class="cert-issuer">Deloitte • Commonwealth Bank • Tata iQ / Forage</div>
+    <div class="cert-desc">
+      Gained practical experience in data analysis, Excel, Tableau dashboards,
+      data privacy, exploratory data analysis (EDA), GenAI-powered predictive
+      modelling, and AI-driven business strategies.
+    </div>
+  </div>
+
+  <div class="cert-side">
+    <span class="cert-date">2026</span>
+    <a class="ext-link" href="deloitte.pdf" target="_blank" rel="noopener">
+      Deloitte ↗
+    </a>
+    <a class="ext-link" href="Comman_wealth.pdf" target="_blank" rel="noopener">
+      Commonwealth Bank ↗
+    </a>
+    <a class="ext-link" href="Tata_Forage.pdf" target="_blank" rel="noopener">
+      Tata iQ ↗
+    </a>
+  </div>
+</div>
+
+     <div class="card cert reveal">
+  <div class="cert-main">
+    <div class="cert-name">Career Essentials in Generative AI</div>
+    <div class="cert-issuer">Microsoft & LinkedIn Learning</div>
+    <div class="cert-desc">
+      Learned Generative AI fundamentals, large language models,
+      prompt engineering, AI applications, and responsible AI practices.
+    </div>
+  </div>
+  <div class="cert-side">
+    <span class="cert-date">2026</span>
+    <a class="ext-link" href="LinkedIN.png"
+       target="_blank" rel="noopener">View credential &nearr;</a>
+  </div>
+</div>
+        <div class="card cert reveal">
+          <div class="cert-main">
+            <div class="cert-name">30-Day SQL Course in PostgreSQL</div>
+            <div class="cert-issuer">PostgreSQL / SQL Training</div>
+            <div class="cert-desc">
+              Completed hands-on training in database creation and management,
+              data manipulation, SQL queries, operators, functions, conditional
+              logic, joins, and importing and analysing real-world datasets.
+            </div>
+          </div>
+          <div class="cert-side">
+            <span class="cert-date">2025</span>
+            <a class="ext-link" href="Certiicate_of_SQL.pdf" target="_blank" rel="noopener">
+              View credential &nearr;
+            </a>
+          </div>
+        </div>
+
+     <div class="card cert reveal">
+  <div class="cert-main">
+    <div class="cert-name">Git Online Certification</div>
+    <div class="cert-issuer">IIT Bombay Spoken Tutorial</div>
+    <div class="cert-desc">
+      Gained hands-on experience with Git version control, branching,
+      merging, resolving conflicts, and working
+      with remote repositories for version management and collaboration.
+    </div>
+  </div>
+  <div class="cert-side">
+    <span class="cert-date">Sept 2025</span>
+    <a class="ext-link" href="Git.png"
+       target="_blank" rel="noopener">
+      View credential &nearr;
+    </a>
+  </div>
+</div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <div class="section-label">06 — Experience</div>
+        <h2>Where I've worked and practiced</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2026</div>
+          <h3>GenAI Powered Data Analytics Job Simulation</h3>
+          <div class="tl-org">Tata iQ (via Forage)</div>
+          <p>Completed a job simulation for Tata iQ's Financial Services team involving AI-powered analytics and strategy. Ran exploratory data analysis with GenAI tools to assess data quality and identify risk indicators, proposed a no-code predictive modeling framework for customer delinquency risk, and designed an AI-driven collections strategy with ethical AI principles and regulatory compliance.</p>
+          <div class="tags"><span class="tag">GenAI</span><span class="tag">EDA</span><span class="tag">Predictive modeling</span></div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2025</div>
+          <h3>Introduction to Data Science Job Simulation</h3>
+          <div class="tl-org">Commonwealth Bank (via Forage)</div>
+          <p>Built SUMIFS and COUNTIFS formulas in Excel to analyze real transaction data. Applied data anonymization techniques (masking, removal, generalization) to protect PII, turned raw data into a business proposal using sentiment and engagement analysis, and designed a relational database schema with primary and foreign keys.</p>
+          <div class="tags"><span class="tag">Excel</span><span class="tag">Data privacy</span><span class="tag">Database design</span></div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2025</div>
+          <h3>Data Analytics Job Simulation</h3>
+          <div class="tl-org">Deloitte (via Forage)</div>
+          <p>Applied data analysis techniques to a forensic technology case, built interactive Tableau dashboards to compare data across categories, and structured findings into a professional, client-ready deliverable.</p>
+          <div class="tags"><span class="tag">Tableau</span><span class="tag">Forensic analytics</span></div>
+        </div>
+
+        <!-- <div class="tl-item reveal">
+          <div class="tl-date">2024 — Present</div>
+          <h3>Business Analyst</h3>
+          <div class="tl-org">Company Name</div>
+          <p>Gather requirements from stakeholders, build recurring reports and support process improvement initiatives. Replace with your real role and achievements.</p>
+          <div class="tags"><span class="tag">Requirements</span><span class="tag">Reporting</span><span class="tag">Stakeholders</span></div>
+        </div> -->
+
+        <div class="tl-item reveal">
+          <div class="tl-date">2024— 2027</div>
+          <h3>B.Sc. Information Technology</h3>
+          <div class="tl-org">University Of Mumbai</div>
+          <p>Currently pursuing my third year of B.Sc. in Information Technology at the University of Mumbai. 
+            Throughout my studies, I have gained experience working with programming languages such as Python, C, C++, and Java, along with MERN stack development. I have also worked on a college project to build a Blood Donation Website using the MERN stack. My coursework 
+            has helped me develop a foundation in databases, programming languages,logic and communication skills.
+          <a href="https://github.com/kartik-data/blood-donor-matching-system" target="_blank">View Blood Donation Project on GitHub ↗</a></p>
+
+      </div>
+    </section>
+
+    <!-- PROFILES -->
+    <section class="section" id="profiles">
+      <div class="section-head reveal">
+        <div class="section-label">07 — Profiles</div>
+        <h2>Find me elsewhere</h2>
+      </div>
+      <div class="profile-grid">
+        <a class="card profile-card reveal" href="https://github.com/kartik-data" target="_blank" rel="noopener">
+          <div class="pf-top"><div class="pf-icon">GH</div><span class="pf-arrow">&nearr;</span></div>
+          <div class="pf-name">GitHub</div>
+          <div class="pf-stat">Code, notebooks and project repos</div>
+        </a>
+        <a class="card profile-card reveal" style="--d:80ms" href="https://www.linkedin.com/in/kartik-sharma-124analyst/" target="_blank" rel="noopener">
+          <div class="pf-top"><div class="pf-icon">in</div><span class="pf-arrow">&nearr;</span></div>
+          <div class="pf-name">LinkedIn</div>
+          <div class="pf-stat">Professional updates and network</div>
+        </a>
+        <a class="card profile-card reveal" style="--d:160ms" href="https://www.hackerrank.com/profile/kartikprayag68" target="_blank" rel="noopener">
+          <div class="pf-top"><div class="pf-icon">HR</div><span class="pf-arrow">&nearr;</span></div>
+          <div class="pf-name">HackerRank</div>
+          <div class="pf-stat">SQL and Python practice</div>
+        </a>
+        <a class="card profile-card reveal" style="--d:240ms" href="https://www.kaggle.com/kartikdss" target="_blank" rel="noopener">
+          <div class="pf-top"><div class="pf-icon">Kg</div><span class="pf-arrow">&nearr;</span></div>
+          <div class="pf-name">Kaggle</div>
+          <div class="pf-stat">Notebooks and datasets</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <div class="section-label">08 — Contact</div>
+        <h2>Let's talk</h2>
+        <p class="sub">Open to Data analyst internships and full time roles, and to collaborating on early-stage data or startup projects.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card contact-item reveal">
+          <div class="k">Email</div>
+          <div class="v"><a href="mailto:kartikprayag68@gmail.com">kartikprayag68@gmail.com</a></div>
+        </div>
+        <div class="card contact-item reveal" style="--d:80ms">
+          <div class="k">Phone</div>
+          <div class="v"><a href="tel:+919695392099">+91 9695392099</a></div>
+        </div>
+        <div class="card contact-item reveal" style="--d:160ms">
+          <div class="k">Location</div>
+          <div class="v">Mumbai, Maharashtra, India</div>
+        </div>
+        <div class="card contact-item reveal" style="--d:240ms">
+          <div class="k">Resume</div>
+          <div class="v"><a href="Kartik_Sharma_Analyst1_Resume.pdf" target="_blank" rel="noopener">Download PDF</a></div>
+        </div>
+      </div>
+      <div class="btn-row reveal">
+        <a class="btn btn-primary" href="mailto:kartikprayag68@gmail.com">Say hello</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/kartik-sharma-124analyst/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year">2026</span> Kartik Sharma. Built with HTML, CSS and JavaScript, hosted free on GitHub Pages.
+    </footer>
+
+  </main>
+</div>
+
+<!-- Chart.js (free, open-source charting library) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
